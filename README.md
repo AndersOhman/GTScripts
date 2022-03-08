@@ -8,6 +8,7 @@ Contents:
 * [3. Move a Mouse to Thorn](https://github.com/AndersOhman/GTScripts#3-move-a-mouse-to-thorn)
 * [4. Sacrifice a Mouse](https://github.com/AndersOhman/GTScripts#4-sacrifice-a-mouse)
 * [5. Hide Dead Mice](https://github.com/AndersOhman/GTScripts#5-hide-dead-mice)
+* [6. Get Mouse Info](https://github.com/AndersOhman/GTScripts#6-get-mouse-info)
 
 ---
 
