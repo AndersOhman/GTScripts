@@ -1,6 +1,6 @@
 # GTScripts.gs
 
-This Google Apps Script integrates into Google Sheets to provide supplementary function to managing the Dinulescu Laboratory mouse colony. This script was developed as a side project to include some basic colony management software functions.
+This Google Apps Script integrates into Google Sheets to provide supplementary function to managing a laboratory mouse colony. This script was developed as a side project to include some basic colony management software functions.
 
 Once installed, in the top menu of the Genotyping Sheet document, you should see a tab on the end called "GT Scripts". This menu has the functions seen below:
 
