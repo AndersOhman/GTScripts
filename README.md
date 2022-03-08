@@ -2,11 +2,20 @@
 
 This Google Apps Script integrates into Google Sheets to provide supplementary function to managing a laboratory mouse colony. This script was developed in ~2015-2016 as a side project to include some basic colony management software functions.
 
+Contents:
+* [1. Process New Tags from Form](https://github.com/AndersOhman/GTScripts#1-process-new-tags-from-form)
+* [2. Update WAB Total #s](https://github.com/AndersOhman/GTScripts#2-update-wab-total-s)
+* [3. Move a Mouse to Thorn](https://github.com/AndersOhman/GTScripts#3-move-a-mouse-to-thorn)
+* [4. Sacrifice a Mouse](https://github.com/AndersOhman/GTScripts#4-sacrifice-a-mouse)
+* [5. Hide Dead Mice](https://github.com/AndersOhman/GTScripts#5-hide-dead-mice)
+
+---
+
 Once installed, in the top menu of the Genotyping Sheet document, you should see a tab on the end called "GT Scripts". This menu has the functions seen below:
 
 ![image](https://user-images.githubusercontent.com/37638547/147890501-3c0d49b3-a153-4375-b3db-0133783a0c9b.png)
 
-##### 1. Process New Tags from Form
+### 1. Process New Tags from Form
 
 Attached to the genotyping sheet is a Google Form:
 https://docs.google.com/forms/d/1M0EjTkX0Ss2hogh8EgfWaz4sPnEiF2PP9INIsY_miE4/viewform
@@ -26,7 +35,7 @@ Usage:
 	1) Fill and submit the Google form.
 	2) Press the Process button.
 
-##### 2. Update WAB Total #s
+### 2. Update WAB Total #s
 
 A very simple method, this reads the total # of living mice from the coversheet, and appends it with the current date to column C of the data sheet.  This live-updates the graph on the coversheet.
 	If you're adding new tails and processing sacrifices, do everything before running this.
@@ -38,7 +47,7 @@ Usage:
 
 Mouse Management Tools
 
-##### 3. Move a Mouse to Thorn
+#### 3. Move a Mouse to Thorn
 
 This allows you to manage the status of Thorn doxycycline-induced mice easier. When you plug in a number, it searches the spreadsheet for the mouse, marks it as sacrificed and hides the row, but copies the # and full genotype string to the Thorn sheet, along with today's date.
 
@@ -54,7 +63,7 @@ Usage:
 	2) Press the Move button, enter mouse # or #s (separated by commas).
 	3) Manage details like doxy & death dates on the Thorn tab.
 
-##### 4. Sacrifice a Mouse
+### 4. Sacrifice a Mouse
 
 This method removes the Alive flag, adds a sac comment to the end of the comment field, and hides the row of the specified mouse.
 
@@ -64,7 +73,7 @@ Usage:
 	1) Keep track of every mouse # you sac in WAB.
 	2) Press the Sacrifice button, enter mouse # or #s (separated by commas).
 
-##### 5. Hide Dead Mice
+### 5. Hide Dead Mice
 
 This method should iterate through the active sheet and hide any rows missing the Alive flag.
 This sometimes doesn't work. The code is overall correct, but the system can crash midway through iterating.
@@ -75,7 +84,7 @@ I've recently had some success with it, just waiting for a while.
 Usage:
 	1) Push the button, WAIT.  If it crashes, hide manually.
 
-##### 6. Get Mouse Info
+### 6. Get Mouse Info
 
 This method provides an info card on the inputted mouse #.
 It includes the #, an A if alive, the sex, birthdate, genotype, parentage (MOMxDAD), and any notes.
