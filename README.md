@@ -47,7 +47,7 @@ Usage:
 
 Mouse Management Tools
 
-#### 3. Move a Mouse to Thorn
+### 3. Move a Mouse to Thorn
 
 This allows you to manage the status of Thorn doxycycline-induced mice easier. When you plug in a number, it searches the spreadsheet for the mouse, marks it as sacrificed and hides the row, but copies the # and full genotype string to the Thorn sheet, along with today's date.
 
